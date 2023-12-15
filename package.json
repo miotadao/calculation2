@@ -1,4 +1,5 @@
 {
+  "homepage": "https://miotadao.github.io/calculation2/",
   "name": "calculation",
   "version": "0.1.0",
   "private": true,
@@ -12,8 +13,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "deploy": "npm run build && gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env PUBLIC_URL=/calculation2 react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
