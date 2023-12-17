@@ -21,16 +21,16 @@ const Compound = (props) => {
       <h1>複利計算</h1>
       <form>
         <div className='i-p'>
-          <input type="number" placeholder='価格(円)' onChange={(e) => props.handlePlice(e)} value={props.plice} />
+          <input type="number" placeholder='価格' onChange={(e) => props.handlePlice(e)} value={props.plice} />
           <p>価格: <span>{props.plice.toLocaleString()}</span>円</p>
         </div>
         <div className='i-p'>
-          <input type="number" placeholder='金利(%)' onChange={(e) => props.handleRate(e)} value={props.rate} />
+          <input type="number" placeholder='金利' onChange={(e) => props.handleRate(e)} value={props.rate} />
           <p>金利: <span>{props.rate}</span> (%)</p>
         </div>
         <div className='i-p'>
           <input type="number" placeholder='期間' onChange={(e) => props.handleyear(e)} value={props.year} />
-          <p><span>{props.year}</span> 年</p>
+          <p>期間: <span>{props.year}</span> 年</p>
         </div>
         <div className='main-btn-container'>
           <input className='main-btn' type="submit" value="将来価値を計算" onClick={calculateFuture} />

@@ -35,11 +35,11 @@ const Pbond = (props) => {
       <form>
         <div className='i-p'>
           <input type="number" placeholder='利率' onChange={(e) => props.handleRate(e)} value={props.rate} />
-          <p>利率: <span>{props.rate}</span> %</p>
+          <p>利率: <span>{props.rate}</span> (%)</p>
         </div>
         <div className='i-p'>
           <input type="number" placeholder='利回り' onChange={(e) => props.handleY(e)} value={props.y} />
-          <p>利回り: <span>{props.y}</span> %</p>
+          <p>利回り: <span>{props.y}</span> (%)</p>
         </div>
         <div className='main-btn-container'>
           <input className='main-btn' type="submit" value="計算" onClick={handleCal} />
@@ -74,7 +74,6 @@ const Pbond = (props) => {
           <button className='reset' onClick={(e) => props.reset2(e)}>リセット</button>
         </div>
       </form>
-      {/* <p className='answer'>（利回り） <span>{props.income2}</span> 円(利子収入) <span>÷</span> <span>{props.plice2}</span> 円(債券価格) = <span>{props.answer2 * 100}</span>(%)</p> */}
       <p className='answer'>（利回り） <span>{props.answer2}</span> (%)</p>
     </div>
   )

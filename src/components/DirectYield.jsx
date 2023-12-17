@@ -30,7 +30,7 @@ const DirectYield = (props) => {
           <button className='reset' onClick={(e) => props.reset(e)}>リセット</button>
         </div>
       </form>
-      <p className='answer'>（直接利回り）<span>{props.answer}</span>％</p>
+      <p className='answer'>（直接利回り）<span>{props.answer}</span> (%)</p>
       <div className='formula-container'>
         <h2>公式</h2>
         <div className='formula'>

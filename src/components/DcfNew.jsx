@@ -67,8 +67,8 @@ const DcfNew = (props) => {
       <h1>DCF法(年ごとに異なるCF)</h1>
       <form>
         <div className='i-p'>
-          <input type="number" placeholder='割引率（％）' onChange={(e) => props.handleRate(e)} value={props.rate} />
-          <p>割引率 <span>{props.rate}</span>（％）</p>
+          <input type="number" placeholder='割引率' onChange={(e) => props.handleRate(e)} value={props.rate} />
+          <p>割引率: <span>{props.rate}</span>（％）</p>
         </div>
         <div className='plus-minus-container'>
           <button className='main-btn' onClick={plus}>1年 プラス</button>
